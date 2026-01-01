@@ -1,15 +1,16 @@
 body {
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
     line-height: 1.8;
-    color: #242424;
+    color: #ffffff;
     max-width: 900px;
     margin: 60px auto;
     padding: 0 40px;
-    background-color: #ffffff;
+    background-image: url('stone.png');
+    background-repeat: repeat;
 }
 
 h1 {
-    color: #000000;
+    color: #ffffff;
     font-weight: 700;
     font-size: 28px;
     margin-top: 50px;
