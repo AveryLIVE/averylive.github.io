@@ -1,0 +1,26 @@
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+    line-height: 1.8;
+    color: #242424;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 40px;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+/* Specific blue for links if needed, or emphasized text */
+.highlight {
+    color: #0078d4;
+}
