@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cube3D • Server Rules</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ===== RESET ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1b1f2a, #0c0f16);
+      color: #eaeaff;
+      display: flex;
+      justify-content: center;
+      padding: 40px 15px;
+    }
+
+    /* ===== MAIN CARD ===== */
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(20, 24, 38, 0.75);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+      padding: 35px;
+      border: 1px solid rgba(255,255,255,0.08);
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .header h1 {
+      font-size: 2.6rem;
+      background: linear-gradient(90deg, #6cf, #9f7cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      font-size: 1.05rem;
+      color: #b8bbff;
+      opacity: 0.9;
+    }
+
+    /* ===== RULE LIST ===== */
+    .rules {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .rule {
+      background: rgba(255,255,255,0.04);
+      border-radius: 14px;
+      padding: 20px 22px;
+      border-left: 4px solid #6cf;
+      transition: all 0.25s ease;
+    }
+
+    .rule:hover {
+      transform: translateY(-3px);
+      background: rgba(255,255,255,0.07);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    }
+
+    .rule h2 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: #eaeaff;
+    }
+
+    .rule span {
+      color: #9fa4ff;
+      font-weight: 500;
+    }
+
+    .punishment {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: #ffb3b3;
+    }
+
+    .punishment b {
+      color: #ff7b7b;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      margin-top: 35px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #a7aaff;
+      opacity: 0.8;
+    }
+
+    .footer b {
+      color: #c7cbff;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2.1rem;
+      }
+
+      .container {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Cube3D • Server Rules</h1>
+      <p>
+        This is Cube3D's official rules.  
+        If you break one of the rules, you will get punished depending on the gravity of it.
+      </p>
+    </div>
+
+    <div class="rules">
+
+      <div class="rule">
+        <h2>1. <span>No racism, homophobia, sexism, or hate speech</span></h2>
+        <p>
+          Any form of discrimination, hate speech, or targeted harassment is strictly prohibited.
+        </p>
+        <div class="punishment">
+          ➜ Punishment: Can lead to a permanent <b>ban</b>.
+        </div>
+      </div>
+
+      <div class="rule">
+        <h2>2. <span>No insulting or harassing other members</span></h2>
+        <p>
+          Insulting, provoking, or harassing other users is not allowed. Even if you are being insulted,
+          report it to a staff member instead of responding.
+        </p>
+        <div class="punishment">
+          ➜ Punishment: <b>Timeout</b> or further action if repeated.
+        </div>
+      </div>
+
+      <div class="rule">
+        <h2>3. <span>No spamming or flooding</span></h2>
+        <p>
+          Spamming messages, emojis, mentions, or flooding channels ruins the experience for others.
+        </p>
+        <div class="punishment">
+          ➜ Punishment: <b>Warning</b>, then <b>timeout</b> if continued.
+        </div>
+      </div>
+
+      <div class="rule">
+        <h2>4. <span>No NSFW or inappropriate content</span></h2>
+        <p>
+          NSFW content, disturbing images, or inappropriate discussions are forbidden.
+        </p>
+        <div class="punishment">
+          ➜ Punishment: Immediate <b>timeout</b> or <b>ban</b> depending on severity.
+        </div>
+      </div>
+
+      <div class="rule">
+        <h2>5. <span>No advertising or self-promotion</span></h2>
+        <p>
+          Advertising servers, channels, social media, or content without staff permission is not allowed.
+        </p>
+        <div class="punishment">
+          ➜ Punishment: <b>Message deletion</b> and possible <b>timeout</b>.
+        </div>
+      </div>
+
+      <div class="rule">
+        <h2>6. <span>Respect staff decisions</span></h2>
+        <p>
+          Staff members are here to keep the server safe. Arguing publicly with staff decisions is not allowed.
+        </p>
+        <div class="punishment">
+          ➜ Punishment: <b>Warning</b> or <b>timeout</b>.
+        </div>
+      </div>
+
+      <div class="rule">
+        <h2>7. <span>No exploiting, scamming, or malicious behavior</span></h2>
+        <p>
+          Scamming, sending malicious links, or attempting to exploit members is strictly forbidden.
+        </p>
+        <div class="punishment">
+          ➜ Punishment: Instant <b>permanent ban</b>.
+        </div>
+      </div>
+
+      <div class="rule">
+        <h2>8. <span>Do not share hacks or cheating tools.</span></h2>
+        <p>
+          Sharing code or executables of hacks, cheats, or exploits for games (or Cube3D) is not allowed.
+        </p>
+        <div class="punishment">
+          ➜ Punishment: Warning or worst case <b>temporary ban</b>.
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      By staying in this server, you agree to follow these rules.  
+      <br>
+      <b>Cube3D Staff</b> reserves the right to take action when necessary.
+    </div>
+  </div>
+</body>
+</html>
